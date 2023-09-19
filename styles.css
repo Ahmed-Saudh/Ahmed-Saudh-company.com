@@ -1,0 +1,324 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+  }
+  
+  /* Responsive styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  header {
+    background:rgba(0, 0, 0, 0.5)url("Background.jpg");
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .logo {
+    height: 100px;
+    font-weight: bold;
+  
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 20px 7%;
+  }
+  
+  
+  .nav-links li::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+  }
+
+  .nav-links li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: white;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+  }
+  
+  
+  section {
+    padding: 20px 0;
+    text-align: center;
+    background: transparent;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  #about h2{
+    margin-top: 20px;
+  }
+
+  #about img{
+    margin: 20px 0;
+    height: 68vh;
+  }
+  
+  h1 {
+    font-size: 80px;
+    margin-bottom: 2px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .hero-content p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    font-style:italic ;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight:300;
+    letter-spacing: 1px;
+    width: 20%;
+    transition: background-color 0.3s ease;
+  }
+
+  #features{
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #features h2{
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .feature {
+    display: inline-block;
+    padding: 0 2rem;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .feature img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0.2rem;
+    border-radius: 4px;
+  }
+  
+  .feature h3 {
+    flex: 2;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    flex: 2;
+  }
+
+  #contact h2{
+    margin-top: 40px;
+  }
+
+  form{
+    margin-top: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+  }
+  
+  form button {
+    margin: 30px;
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight:300;
+    letter-spacing: 1px;
+    width: 35%;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+   /* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-bottom: 5px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .nav-links li {
+    margin-right: 10px;
+  }
+  .hero-content {
+    padding: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 70%;
+  }
+
+  .container {
+    padding: 5px 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  #about img{
+    margin: 5px 0;
+    height: 38vh;
+  }
+
+  #features{
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #features h2{
+    margin-bottom: 2px;
+    width: 100%;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+
+  #contact h2{
+    margin-top: 10px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  form button {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 50%;
+  }
+}
+
+  
